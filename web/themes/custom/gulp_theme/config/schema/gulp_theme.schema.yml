@@ -1,0 +1,5 @@
+# Required to validate default theme settings.
+
+compass_theme.settings:
+  type: theme_settings
+  label: 'THEMETITLE settings'

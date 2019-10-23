@@ -1,0 +1,50 @@
+#block-gulp-theme-content {
+  border: aquamarine;
+  border-style: double;
+  padding: 5px;
+  background: #e2d717;
+
+  > div > div > div.views-row > article > div:nth-child(6) > {
+    div.field {
+      &.field--name-body.field--type-text-with-summary.field--label-hidden.field__item.quickedit-field > p {
+        color: black;
+      }
+
+      &.field--name-field-image.field--type-image.field--label-hidden.field__item.quickedit-field > a > img {
+        border: #73c7d4;
+        border-style: double;
+        padding: 5px;
+        background: #e2d717;
+      }
+    }
+
+    ul > li {
+      &.node-readmore > a, &.comment-add > a {
+        color: #1e81dc;
+        background: black;
+      }
+
+      &.node-readmore > a:hover, &.comment-add > a:hover {
+        color: #dcb61e;
+        background: #4c5e77;
+      }
+    }
+  }
+}
+@mixin table {
+  th {
+    text-align: center;
+    font-weight: bold;
+  }
+  td, th {padding: 2px}
+}
+
+@mixin left($dist) {
+  float: left;
+  margin-left: $dist;
+}
+
+#data {
+  @include left(10px);
+  @include table;
+}
