@@ -3,9 +3,6 @@ var sass = require('gulp-sass');
 var rename = require('gulp-rename');
 var autoprefixer = require('gulp-autoprefixer');
 
-gulp.task('sass', function() {
-
-});
 gulp.task('sass', done => {
     gulp.src('./sass/**/*.scss')
         .pipe(sass().on('error', sass.logError))
